@@ -1,0 +1,219 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>Gourav Gourav Portfolio Website</title>
+        <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/normalize/7.0.0/normalize.min.css">
+        <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.11.2/css/all.css" integrity="sha256-46qynGAkLSFpVbEBog43gvNhfrOj+BmwXdxFgVK/Kvc=" crossorigin="anonymous" />  
+        
+        <link href="https://fonts.googleapis.com/css?family=Lora:400,700|Roboto+Slab:400,700&display=swap" rel="stylesheet"> 
+        
+        <link rel="stylesheet" href="css/style.css">
+
+    </head>
+    <body>
+        <header>
+            <button class="nav-toggle" aria-label="toggle navigation">
+                <span class="hamburger"></span>
+            </button>
+            <nav class="nav">
+                <ul class="nav__list">
+                    <li class="nav__item"><a href="#home" class="nav__link">Home</a></li>
+                    <li class="nav__item"><a href="#services" class="nav__link">My Services</a></li>
+                    <li class="nav__item"><a href="#about" class="nav__link">About me</a></li>
+                    <li class="nav__item"><a href="#work" class="nav__link">My Projects</a></li>
+                    <li class="nav__item"><a href="#my-skills" class="nav__link">Skills</a></li>
+                    <li class="nav__item"><a href="#contact" class="nav__link">Contact us</a></li>
+                </ul>
+            </nav>
+        </header>
+        
+        <!-- Introduction -->
+        <section class="intro" id="home">
+            <h1 class="section__title section__title--intro">
+                Hi, I am <strong>Gourav&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</strong>
+            </h1>
+            <p class="section__subtitle section__subtitle--intro">Frontend Developer</p>
+            <img src="img/Gourav.jpg" alt="a picture of Gourav" class="intro__img">
+        </section>
+        
+        
+        <!-- My services -->
+        <section class="my-services" id="services">
+            <h2 class="section__title section__title--services">What I do</h2>
+            <div class="services">
+                <div class="service">
+                    <h3>Design + Development</h3>
+                    <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.</p>
+                </div> 
+                
+                <div class="service">
+                    <h3>E-Commerce</h3>
+                    <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.</p>
+                </div> 
+                
+                <div class="service">
+                    <h3>WordPress</h3>
+                    <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.</p>
+                </div>
+            </div>
+            
+        </section>
+        
+        
+        <!-- About me -->
+        <section class="about-me" id="about">
+           <h2 class="section__title section__title--about">Who I am</h2>
+           <p class="section__subtitle section__subtitle--about">Frontend Developer</p>
+           
+           <div class="about-me__body">
+               <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do
+                    eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enimad minim veniam, quis 
+                    nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.</p>
+           </div>
+           
+            <img src="img/Gourav.jpg" alt="picture to Gourav" class="about-me__img">
+           
+        </section>
+        
+        <!-- My Projects -->
+        <section class="my-work" id="work">
+            <div class="heading">
+            <h2 class="section__title section__title--work">My projects</h2>
+            <p class="section__subtitle section__subtitle--work">A selection of range of my projects</p>
+            </div>
+            <div class="portfolio">
+                
+                <div class="column" style="background-color:#aaa;">
+                  <h3>MERN Stack Chat Application <span role="img" aria-label="emoji">💬</span></h3>
+                  <h4>Created with React, Express, Node and Socket.IO</h4>
+                  <a href="" >
+                    <img src="img/chat_application.png" class="portfolio__img">
+                  </a>
+                  <br>
+                  <button class="btn"> Full story</button>
+                </div>
+                <div class="column" style="background-color:#bbb;">
+                    <h3>Weapon list project</h3>
+                    <br>
+                    <a href="" >
+                        <img src="img/WeaponList_project.jpg" class="portfolio__img" height="50%" weight="50%">
+                    </a>
+                    <br>
+                  <button class="btn"> Full story</button>
+                </div>
+                <div class="column" style="background-color:#bbb;">
+                    <h3>Task Alerting App</h3>
+                    <h4>IOS Project</h4>
+                    <a href="https://github.com/gouravkhurana10/TaskAlertingApp">
+                        <img src="img/ios_project.jpg" class="portfolio__img" >
+                    </a>
+                    <br>
+                  <button class="btn" onclick="window.location.href = 'https://github.com/gouravkhurana10/TaskAlertingApp';"> Full story</button>
+                </div>
+                <div class="column" style="background-color:#aaa;">
+                    <h3>Inventory Management System</h3>
+                    <br>
+                    <a href="">
+                        <img src="img/capstone_project.jpg" class="portfolio__img">
+                    </a>
+                    <br>
+                  <button class="btn"> Full story</button>
+                </div>
+            </div>
+        </section>
+        
+        <!-- Start Skills -->
+  <section class="skills" id="my-skills">
+    <div class="container">
+         <h2 class="section__title section__title--skills">Skills</h2>
+         <div class="skills-content">
+              <div class="card">
+             <label>Html5</label>
+                <div class="progress" data-text="80%">
+                      <div class="inner"  style="width: 80%">
+                      </div>
+                </div>
+              </div>
+              <div class="card">
+             <label>Css</label>
+                <div class="progress" data-text="80%">
+                      <div class="inner"  style="width: 80%">
+                      </div>
+                </div>
+              </div>
+              <div class="card">
+             <label>Javascript</label>
+                <div class="progress" data-text="65%">
+                      <div class="inner"  style="width: 65%">
+                      </div>
+                </div>
+              </div>
+              <div class="card">
+             <label>Angular</label>
+                <div class="progress" data-text="40%">
+                      <div class="inner"  style="width: 40%">
+                      </div>
+                </div>
+              </div>
+              <div class="card">
+             <label>Java</label>
+                <div class="progress" data-text="70%">
+                      <div class="inner"  style="width:70%">
+                      </div>
+                </div>
+              </div>
+              <div class="card">
+             <label>React</label>
+                <div class="progress" data-text="78%">
+                      <div class="inner" style="width: 78%">
+                      </div>
+                </div>
+              </div>
+         </div>
+    </div>
+</section>
+<!-- End Skills -->
+    
+        <!-- Footer -->
+        <footer class="footer">
+            <h2></h2>
+            <h2 class="section__title section__title--contact">Contact us</h2>
+            <b id="contact">EMAIL:&emsp;</b><a href="mailto:gouravkhurana10@gmail.com" class="footer__link">Gouravkhurana10@gmail.com</a>
+            <br><br>
+            <hr>
+            <br>
+            <b color="white">ADDRESS:&emsp;</b>131 Bexhill Avenue, Scarborough, ON, M1L3C2
+            <br><br>
+            <hr>
+            <br>
+            <b color="white">PHONE:&emsp;</b>416-400-6164
+            <br><br>
+            <hr>
+            <ul class="social-list">
+                <b>SOCIAL:&emsp;</b>
+                <li class="social-list__item">
+                    <a class="social-list__link" href="https://www.linkedin.com/in/gourav-khurana/">
+                        <i class="fab fa-linkedin"></i>
+                    </a>
+                </li>
+                <li class="social-list__item">
+                    <a class="social-list__link" href="https://github.com/gouravkhurana10">
+                        <i class="fab fa-github"></i>
+                    </a>
+                </li>
+                <li class="social-list__item">
+                    <a class="social-list__link" href="https://www.facebook.com/gourav.khurana.397">
+                        <i class="fab fa-facebook"></i>
+                    </a>
+                </li>
+            </ul>
+            
+        </footer>
+        
+        
+        <script src="js/index.js"></script>
+        
+    </body>
+</html>
