@@ -393,6 +393,10 @@ header {
     border-radius: 4px;
 }
 
+.about-me__body{
+    font-size: large;
+}
+
 @media (min-width: 600px) {
     .about-me {
         display: grid;
