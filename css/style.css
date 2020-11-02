@@ -394,7 +394,7 @@ header {
 }
 
 .about-me__body{
-    font-size: large;
+    font-size: 15px;
 }
 
 @media (min-width: 600px) {
