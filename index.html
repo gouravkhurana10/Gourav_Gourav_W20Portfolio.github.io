@@ -1,266 +1,368 @@
-<!DOCTYPE html>
+<!doctype html>
 <html lang="en">
-    <head>
-        <meta charset="UTF-8">
-        <meta name="viewport" content="width=device-width, initial-scale=1.0">
-        <title>Gourav Khurana/Portfolio Website</title>
-        <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css" integrity="sha384-BVYiiSIFeK1dGmJRAkycuHAHRg32OmUcww7on3RYdg4Va+PmSTsz/K68vbdEjh4u" crossorigin="anonymous"/>
-        <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/normalize/7.0.0/normalize.min.css">
-        <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.11.2/css/all.css" integrity="sha256-46qynGAkLSFpVbEBog43gvNhfrOj+BmwXdxFgVK/Kvc=" crossorigin="anonymous" />  
-        
-        <link href="https://fonts.googleapis.com/css?family=Lora:400,700|Roboto+Slab:400,700&display=swap" rel="stylesheet"> 
-        
-        <link rel="stylesheet" href="css/style.css">
 
-    </head>
-    <body>
-        <header>
-            <button class="nav-toggle" aria-label="toggle navigation">
-                <span class="hamburger"></span>
+<head>
+    <!-- Required meta tags -->
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+
+    <!-- Bootstrap CSS -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.0-beta1/dist/css/bootstrap.min.css" rel="stylesheet"
+        integrity="sha384-giJF6kkoqNQ00vy+HMDP7azOuL0xtbfIcaT9wjKHr8RbDVddVHyTfAAsrekwKmP1" crossorigin="anonymous">
+
+    <!-- External Css file -->
+    <link rel="stylesheet" href="css/style.css">
+
+    <!-- Font Awesome -->
+    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.8.1/css/all.css"
+        integrity="sha384-50oBUHEmvpQ+1lW4y57PTFmhCaXp0ML5d60M1M7uH2+nqUivzIebhndOJK28anvf" crossorigin="anonymous">
+
+    <title>Gourav Khurana/Portfolio Website</title>
+</head>
+
+<body>
+    <!-- Navigation Bar -->
+    <nav class="navbar navbar-expand-lg navbar-dark bg-dark fixed-top">
+        <div class="container-fluid">
+            <a class="navbar-brand" href="#">Gourav Khurana</a>
+            <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav"
+                aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+                <span class="navbar-toggler-icon"></span>
             </button>
-            <nav class="nav">
-                <ul class="nav__list">
-                    <li class="nav__item"><a href="#home" class="nav__link">Home</a></li>
-                    <li class="nav__item"><a href="#services" class="nav__link">My Services</a></li>
-                    <li class="nav__item"><a href="#about" class="nav__link">About me</a></li>
-                    <li class="nav__item"><a href="#work" class="nav__link">My Projects</a></li>
-                    <li class="nav__item"><a href="#my-skills" class="nav__link">Skills</a></li>
-                    <li class="nav__item"><a href="#contact" class="nav__link">Contact us</a></li>
+            <div class="collapse navbar-collapse" id="navbarNav">
+                <ul class="navbar-nav">
+                    <li class="nav-item">
+                        <a class="nav-link" aria-current="page" href="#home">Home</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="#about-me">About</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="#services">Services</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="#projects">Projects</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="#contact">Contact</a>
+                    </li>
                 </ul>
-            </nav>
-        </header>
-        
-        <!-- Introduction -->
-        <section class="intro" id="home">
-            <h1 class="section__title section__title--intro">
-                Hi, I am <strong>Gourav&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</strong>
-            </h1>
-            <p class="section__subtitle section__subtitle--intro">JUNIOR FULL-STACK DEVELOPER</p>
-            <img src="img/Gourav.jpg" alt="a picture of Gourav" class="intro__img">
-        </section>
-        
-        
-        <!-- My services -->
-        <section class="my-services" id="services">
-            <h2 class="section__title section__title--services">What I do</h2>
-            <div class="services">
-                <div class="service">
-                    <div class="icon">
-                        <span class="fa fa-laptop"></span>
-                   </div>
-                    <h3>Web Development</h3>
-                    <p>I am proficient in writing easy and correct code which is readable by any programmer. I perpetuate the ability to design the database and optimize queries. I have knowledge of modern programming paradigms with amazing design patterns and popular web-frameworks.</p>
-                </div> 
-                
-                <div class="service">
-                    <div class="icon">
-                        <span class="fa fa-code"></span>
-                   </div>
-                    <h3>Creative Design</h3>
-                    <p>In my team, I take care of executing all visual design stages from concept to final hand-off to engineering. I conceptualize original website design ideas that brings simplicity and user friendliness to complex roadblocks. I am proficient in creating wireframes, storyboards, user flows, process flows and site maps to communicate interactions and design ideas.</p>
-                </div> 
-                
-                <div class="service">
-                    <div class="icon">
-                        <span class="fa fa-lock"></span>
-                   </div>
-                    <h3>Security</h3>
-                    <p>I look forward to dig into technical questions and examine them from all sides. I keep full enthusiasm and a high degree of adaptability. Other than this, I possess strong analytical and diagnostic skills. I have current understanding of common web vulnerabilities and I make sure of maintaining awareness and knowledge of contemporary standards, practices, procedures and methods. </p>
+            </div>
+        </div>
+    </nav>
+
+    <!-- Introduction -->
+
+    <div class="container" id="home" style="padding-top: 5rem;">
+        <section class="text-center">
+            <div class="row py-lg-5">
+                <div class="col-lg-6 col-md-8 mx-auto">
+                    <h1 class="fw-light">Hey! Welcome to my portfolio website.</h1>
+                    <h1 class="display-4 fw-normal">I'm Gourav</h1>
+                    <p class="lead text-muted" id="animation">I'm Java Full-Stack Developer</p>
+                    <p>
+                        <a class="btn btn-outline-primary" href="#about-me" role="button">About me</a>
+                    </p>
                 </div>
             </div>
-            
         </section>
-        
-        
-        <!-- About me -->
-        <section class="about-me" id="about">
-           <h2 class="section__title section__title--about">Who I am</h2>
-           <p class="section__subtitle section__subtitle--about">JUNIOR FULL-STACK DEVELOPER</p>
-           
-           <div class="about-me__body">
-               <p>
-                • Result-oriented, self-motivated and innovative Web Developer, holding an Advanced Diploma in 
-                “Computer Programmer Analyst” course at George Brown College pursuing leadership <br>
-                Proficient with the following: <br>
-                • Web Application Development (Java) <br>
-                - DevOps (CI/CD pipeline, Bash, Git, AWS, GCP) <br>
-                - Full Stack Development (MEAN, MERN) <br>
-                - Mobile Development (Android/IOS) <br> 
-                - Artificial Intelligence (Python) <br>
-                - Databases (MS SQL, MySQL, Oracle) <br>
-                - Software Tools (Visual Studio, Eclipse IDE, VS Code, PyCharm, Android, Anaconda, Android Studio, XCode) <br>
-                - Framework (WordPress, MVC) <br>
-                - Documentation (MS Office) <br>
-                • Thrive in complex, innovative and demanding environment <br>
-                • Well-known as a highly creative developer who can always be trusted to come up with a new approach. But I know that the user's thoughts come first, and I never try to impose my ideas on others. Instead, I spend a lot of time understanding the user before suggesting ideas. I can (and often do) work well alone, but I’m at my best collaborating with others. 
-                </p>
-           </div>
-           
-            <img src="img/Gourav.jpg" alt="picture to Gourav" class="about-me__img">
-           
-        </section>
-        
-        <!-- My Projects -->
-        <section class="my-work" id="work">
-            <div class="heading">
-            <h2 class="section__title section__title--work">My projects</h2>
-            <p class="section__subtitle section__subtitle--work">A selection of range of my projects</p>
-            </div>
-            <div class="portfolio">
-                
-                <div class="column" style="background-color:#aaa;">
-                  <h3>MERN Stack Chat Application <span role="img" aria-label="emoji">💬</span></h3>
-                  <h4>Created with Express, Node and Socket.IO</h4>
-                  <a href="https://realtimechat-application.herokuapp.com/" target="blank">
-                    <img src="img/chat_application.png" class="portfolio__img">
-                  </a>
-                  <br>
-                  <button class="btn" onclick="window.location.href = 'https://github.com/gouravkhurana10/chat-app';"> Full story</button>
-                </div>
-
-                <div class="column" style="background-color:#bbb;">
-                    <h3>Weapon list project</h3>
-                    <h4>Using C#</h4>
-                    <a href="https://github.com/gouravkhurana10/WeaponShopProject" >
-                        <img src="img/WeaponList_project.jpg" class="portfolio__img" height="50%" weight="50%">
-                    </a>
-                    <br>
-                  <button class="btn" onclick="window.location.href = 'https://github.com/gouravkhurana10/WeaponShopProject';"> Full story</button>
-                </div>
-
-                <div class="column" style="background-color:#bbb;">
-                    <h3>Task Alerting App</h3>
-                    <h4>IOS Project</h4>
-                    <a href="https://github.com/gouravkhurana10/TaskAlertingApp">
-                        <img src="img/ios_project.jpg" class="portfolio__img" >
-                    </a>
-                    <br>
-                  <button class="btn" onclick="window.location.href = 'https://github.com/gouravkhurana10/TaskAlertingApp';"> Full story</button>
-                </div>
-
-                <div class="column" style="background-color:#aaa;">
-                    <h3>Inventory Management System</h3>
-                    <br>
-                    <a href="https://github.com/gouravkhurana10/Inventory_Management_System">
-                        <img src="img/capstone_project.jpg" class="portfolio__img">
-                    </a>
-                    <br>
-                  <button class="btn" onclick="window.location.href = 'https://github.com/gouravkhurana10/Inventory_Management_System';"> Full story</button>
-                </div>
-
-                <div class="column" style="background-color:#aaa;">
-                    <h3>Grocery List App</h3>
-                    <h4>Android Application</h4>
-                    <a href="https://github.com/gouravkhurana10/Grocery-List">
-                        <img src="img/groceryList_app.jpg" class="portfolio__img">
-                    </a>
-                    <br>
-                  <button class="btn" onclick="window.location.href = 'https://github.com/gouravkhurana10/TaskAlertingApp';"> Full story</button>
-                </div>
-
-                <div class="column" style="background-color:#bbb;">
-                    <h3>CRUD MEAN Stack Application</h3>
-                    <h4>Mongodb, Express, Angular, Node.js</h4>
-                    <a href="https://github.com/gouravkhurana10/GamerLobby">
-                        <img src="img/crud_mean_app.jpg" class="portfolio__img" >
-                    </a>
-                    <br>
-                  <button class="btn" onclick="window.location.href = 'https://github.com/gouravkhurana10/GamerLobby';"> Full story</button>
-                </div>
-
-            </div>
-        </section>
-        
-        <!-- Start Skills -->
-  <section class="skills" id="my-skills">
-    <div class="container">
-         <h2 class="section__title section__title--skills">Skills</h2>
-         <div class="skills-content">
-              <div class="card">
-             <label>Html5</label>
-                <div class="progress" data-text="80%">
-                      <div class="inner"  style="width: 80%">
-                      </div>
-                </div>
-              </div>
-              <div class="card">
-             <label>Css</label>
-                <div class="progress" data-text="80%">
-                      <div class="inner"  style="width: 80%">
-                      </div>
-                </div>
-              </div>
-              <div class="card">
-             <label>Javascript</label>
-                <div class="progress" data-text="65%">
-                      <div class="inner"  style="width: 65%">
-                      </div>
-                </div>
-              </div>
-              <div class="card">
-             <label>Angular</label>
-                <div class="progress" data-text="40%">
-                      <div class="inner"  style="width: 40%">
-                      </div>
-                </div>
-              </div>
-              <div class="card">
-             <label>Java</label>
-                <div class="progress" data-text="70%">
-                      <div class="inner"  style="width:70%">
-                      </div>
-                </div>
-              </div>
-              <div class="card">
-             <label>React</label>
-                <div class="progress" data-text="78%">
-                      <div class="inner" style="width: 78%">
-                      </div>
-                </div>
-              </div>
-         </div>
     </div>
-</section>
-<!-- End Skills -->
-    
-        <!-- Footer -->
-        <footer class="footer">
-            <h2></h2>
-            <h2 class="section__title section__title--contact">Contact</h2>
-            <b id="contact">EMAIL:&emsp;</b><a href="mailto:gouravkhurana10@gmail.com" class="footer__link">Gouravkhurana10@gmail.com</a>
-            <br><br>
-            <hr>
-            <br>
-            <b color="white">ADDRESS:&emsp;</b>131 Bexhill Avenue, Scarborough, ON, M1L3C2
-            <br><br>
-            <hr>
-            <br>
-            <b color="white">PHONE:&emsp;</b>416-400-6164
-            <br><br>
-            <hr>
-            <ul class="social-list">
-                <b>SOCIAL:&emsp;</b>
-                <li class="social-list__item">
-                    <a target="blank" class="social-list__link" href="https://www.linkedin.com/in/gourav-khurana/">
-                        <i class="fab fa-linkedin"></i>
-                    </a>
-                </li>
-                <li class="social-list__item">
-                    <a target="blank" class="social-list__link" href="https://github.com/gouravkhurana10">
-                        <i class="fab fa-github"></i>
-                    </a>
-                </li>
-                <li class="social-list__item">
-                    <a target="blank" class="social-list__link" href="https://www.facebook.com/gourav.khurana.397">
-                        <i class="fab fa-facebook"></i>
-                    </a>
-                </li>
-            </ul>
-            
-        </footer>
-        
-        
-        <script src="js/index.js"></script>
-        
-    </body>
+
+    <!-- About-me -->
+    <div class="bg-light" id="about-me">
+        <div class="container py-5 mt-4" style="max-width: 900px;">
+            <div class="row g-0 rounded overflow-hidden flex-md-row mb-4 shadow h-md-250 position-relative">
+                <div class="col p-4 d-flex flex-column position-static">
+                    <h2 class="fw-light mb-2">About me</h2>
+                    <strong class="d-inline-block mb-2 text-primary">Java Full-Stack Developer | Front-end
+                        Developer</strong>
+                    <!-- <div class="mb-1 text-muted">Java Full-Stack Developer</div> -->
+                    <p class="card-text">
+                        I am a Java Full-Stack Developer, pursuing Java as a back-end language and React js for
+                        front-end
+                        development. Holding an Advanced Diploma in "Computer Programmer Analyst" from George Brown
+                        College,
+                        I enjoy using Google Cloud MySQL as a database application.
+                    </p>
+                    <p class="card-text">
+                        I love finding practical solutions and collaborating with quality people to build web sites and
+                        web
+                        applications.
+                    </p>
+                    <div class="mb-3 text-muted fst-italic">Providing value for my clients is always the goal.</div>
+                    <div>
+                        <a class="btn btn-primary" role="button" data-bs-toggle="modal" data-bs-target="#hire_me">Hire
+                            me</a> <!-- Button trigger modal -->
+                        <a class="btn btn-outline-primary ms-1" href="#contact" role="button">Say Hi! &#128075;</a>
+                    </div>
+
+                    <!-- Modal -->
+                    <div class="modal fade" id="hire_me" tabindex="-1" aria-labelledby="exampleModalLabel"
+                        aria-hidden="true">
+                        <div class="modal-dialog modal-dialog-centered">
+                            <div class="modal-content">
+                                <div class="modal-header">
+                                    <h5 class="modal-title" id="exampleModalLabel">Connect with me</h5>
+                                    <button type="button" class="btn-close" data-bs-dismiss="modal"
+                                        aria-label="Close"></button>
+                                </div>
+                                <div class="modal-body">
+                                    Want to work together? Contact me at the e-mail address provided.
+                                    <h5 class="fw-normal my-2 text-muted lead">Gouravkhurana10@gmail.com</h5>
+                                </div>
+                                <div class="modal-footer">
+                                    <button type="button" class="btn btn-secondary"
+                                        data-bs-dismiss="modal">Close</button>
+                                    <a href="mailto:gouravkhurana10@gmail.com" role="button"
+                                        class="btn btn-primary">Send email</a>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-auto d-none d-lg-block">
+                    <img src="img/Gourav_1.jpeg" class="bd-placeholder-img" width="310" height="400">
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <!-- Services -->
+
+    <div class="container marketing py-5" id="services">
+        <h1 class="fw-light mb-5 text-center">What I Do</h1>
+        <div class="row">
+            <div class="col-lg-4 text-center">
+                <img src="img/java_development.jpg" class="bd-placeholder-img rounded-circle" width="140" height="140">
+
+                <h2>Java Development</h2>
+                <p>Design and develop high-volume, low-latency applications using J2EE, Spring MVC and Spring Boot. I
+                    contribute in all phases of the development lifecycle and write well designed, testable, efficient
+                    code.</p>
+                <!-- <p><a class="btn btn-secondary" href="#" role="button">View details »</a></p> -->
+            </div><!-- /.col-lg-4 -->
+            <div class="col-lg-4 text-center">
+                <img src="img/front-end_development.jpg" class="bd-placeholder-img rounded-circle" width="140"
+                    height="140">
+
+                <h2>Front-end Development</h2>
+                <p>Develop and build user-facing features using HTML, CSS and ReactJs. I write reusable code and
+                    libraries to a standard which makes it quick and easy to maintain the code in the future.</p>
+                <!-- <p><a class="btn btn-secondary" href="#" role="button">View details »</a></p> -->
+            </div><!-- /.col-lg-4 -->
+            <div class="col-lg-4 text-center">
+                <img src="img/technical_support.jpg" class="bd-placeholder-img rounded-circle" width="140" height="140">
+
+                <h2>Technical Support</h2>
+                <p>Experienced in IT Support including troubleshooting (on and off site), installing software and
+                    configuring desktops. I have also provided IT help desk support and have developed excellent
+                    interpersonal skills.</p>
+                <!-- <p><a class="btn btn-secondary" href="#" role="button">View details »</a></p> -->
+            </div><!-- /.col-lg-4 -->
+        </div>
+    </div>
+
+    <!-- My projects -->
+
+    <div class="album py-5 bg-light" id="projects">
+        <h1 class="fw-light mb-5 text-center">My Projects</h1>
+        <div class="container">
+            <div class="row row-cols-1 row-cols-sm-2 row-cols-md-3 g-3">
+                <div class="col">
+                    <div class="card shadow-sm">
+                        <img src="img/Student_Management_System.jpg" alt="image-1"
+                            class="bd-placeholder-img card-img-top" width="100%" height="225">
+                        <div class="card-body">
+                            <p class="card-text">Student Management System (using Java EE, MySQL, CSS, HTML, MVC
+                                Framework).</p>
+                            <div class="d-flex justify-content-between align-items-center">
+                                <div class="btn-group">
+                                    <a class="btn btn-outline-primary" href="https://youtu.be/gZy7cg724ok"
+                                        target="blank" role="button">View</a>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="col">
+                    <div class="card shadow-sm">
+                        <img src="img/Realtime_chat_app.jpg" alt="image-2" class="bd-placeholder-img card-img-top"
+                            width="100%" height="225">
+                        <div class="card-body">
+                            <p class="card-text">Realtime Chat Application created with Node Js and Socket.IO</p>
+                            <div class="d-flex justify-content-between align-items-center">
+                                <div class="btn-group">
+                                    <a class="btn btn-outline-primary"
+                                        href="https://realtimechat-application.herokuapp.com/" target="blank"
+                                        role="button">View</a>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="col">
+                    <div class="card shadow-sm">
+                        <img src="img/WeaponList_project.jpg" alt="image-3" class="bd-placeholder-img card-img-top"
+                            width="100%" height="225">
+                        <div class="card-body">
+                            <p class="card-text">Weapon Shop C# Project (used for buying and selling weapons).</p>
+                            <div class="d-flex justify-content-between align-items-center">
+                                <div class="btn-group">
+                                    <a class="btn btn-outline-primary"
+                                        href="https://github.com/gouravkhurana10/WeaponShopProject" target="blank"
+                                        role="button">View</a>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="col">
+                    <div class="card shadow-sm">
+                        <img src="img/Inventory_Management_System.jpg" alt="image-4"
+                            class="bd-placeholder-img card-img-top" width="100%" height="225">
+                        <div class="card-body">
+                            <p class="card-text">Inventory Management Server-based Application (Java, HTML/CSS,
+                                Bootstrap,
+                                Tomcat server and Google Cloud MySQL).</p>
+                            <div class="d-flex justify-content-between align-items-center">
+                                <div class="btn-group">
+                                    <a class="btn btn-outline-primary"
+                                        href="https://github.com/gouravkhurana10/Inventory_Management_System"
+                                        target="blank" role="button">View</a>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <!-- <div class="col">
+                    <div class="card shadow-sm">
+                        <img alt="image-5" class="bd-placeholder-img card-img-top" width="100%" height="225">
+                        <div class="card-body">
+                            <p class="card-text">This is a wider card with supporting text below as a natural
+                                lead-in to additional content. This content is a little bit longer.</p>
+                            <div class="d-flex justify-content-between align-items-center">
+                                <div class="btn-group">
+                                    <a class="btn btn-outline-primary" href="#" role="button">View</a>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="col">
+                    <div class="card shadow-sm">
+                        <img alt="image-6" class="bd-placeholder-img card-img-top" width="100%" height="225">
+                        <div class="card-body">
+                            <p class="card-text">This is a wider card with supporting text below as a natural
+                                lead-in to additional content. This content is a little bit longer.</p>
+                            <div class="d-flex justify-content-between align-items-center">
+                                <div class="btn-group">
+                                    <a class="btn btn-outline-primary" href="#" role="button">View</a>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div> -->
+            </div>
+        </div>
+    </div>
+
+    <!-- Contact -->
+
+    <div class="container py-5" id="contact">
+        <h1 class="fw-light mb-5 text-center">Contact Details</h1>
+        <div class="row gx-5">
+            <div class="col">
+                <div class="row p-3">
+                    <div class="col-md-6 text-center">
+                        <img src="img/Gourav_pencil_sketch.jpeg" class="bd-placeholder-img rounded-circle" width="270"
+                            height="250">
+                    </div>
+                    <div class="col-md-6 text-center">
+                        <h5 class="text-muted my-4 p-4">For quaries and collaboration, write to me.</h5>
+                    </div>
+                </div>
+            </div>
+            <div class="col">
+                <div class="p-4 bg-light">
+                    <h5 class="fw-normal">Email: <a href="mailto:gouravkhurana10@gmail.com"
+                            class="text-muted lead">Gouravkhurana10@gmail.com</a></h5>
+                    <hr class="featurette-divider">
+
+                    <h5 class="fw-normal">Address: <span class="text-muted">131 Bexhill Avenue, Scarborough, ON,
+                            M1L3C2</span></h5>
+                    <hr class="featurette-divider">
+
+                    <h5 class="fw-normal">Phone: <span class="text-muted">+1 (416) 400-6164</span></h5>
+                    <hr class="featurette-divider">
+
+                    <ul class="bd-footer-links ps-0">
+                        <h5 class="fw-normal d-inline-block">Social:</h5>
+                        <li class="d-inline-block ms-2">
+                            <a target="blank" class="social-list__link text-muted"
+                                href="https://www.linkedin.com/in/gourav-khurana/">
+                                <i class="fab fa-linkedin fs-5"></i>
+                            </a>
+                        </li>
+                        <li class="d-inline-block ms-3">
+                            <a target="blank" class="social-list__link text-muted"
+                                href="https://github.com/gouravkhurana10">
+                                <i class="fab fa-github-square fs-5"></i>
+                            </a>
+                        </li>
+                        <li class="d-inline-block ms-3">
+                            <a target="blank" class="social-list__link text-muted"
+                                href="https://www.facebook.com/gourav.khurana.397">
+                                <i class="fab fa-facebook-square fs-5"></i>
+                            </a>
+                        </li>
+                    </ul>
+                </div>
+
+            </div>
+        </div>
+    </div>
+
+    <!-- Footer -->
+
+    <footer class="footer mt-auto py-3 bg-dark">
+        <div class="container text-center">
+            <span class="text-muted">&#169; </span><span id="year" class="text-muted"></span><span class="text-muted">
+                Gourav Khurana</span>
+        </div>
+        <script>
+            document.getElementById("year").innerHTML = new Date().getFullYear();
+        </script>
+    </footer>
+
+    <!-- <div class="container py-5" id="contact">
+        <h1 class="fw-light mb-5 text-center">Contact Me</h1>
+        <div class="form-floating mb-3">
+            <input type="text" class="form-control" placeholder="Name">
+            <label for="floatingInput">Name</label>
+        </div>
+        <div class="form-floating mb-3">
+            <input type="email" class="form-control" placeholder="name@example.com">
+            <label for="floatingInput">Email address</label>
+        </div>
+        <div>
+            <textarea class="form-control" id="exampleFormControlTextarea1" rows="3" placeholder="Message"></textarea>
+        </div>
+    </div> -->
+
+    <!-- Optional JavaScript; choose one of the two! -->
+
+    <!-- Option 1: Bootstrap Bundle with Popper -->
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.0-beta1/dist/js/bootstrap.bundle.min.js"
+        integrity="sha384-ygbV9kiqUc6oa4msXn9868pTtWMgiQaeYH7/t7LECLbyPA2x65Kgf80OJFdroafW"
+        crossorigin="anonymous"></script>
+
+    <!-- Option 2: Separate Popper and Bootstrap JS -->
+    <!--
+    <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.5.4/dist/umd/popper.min.js" integrity="sha384-q2kxQ16AaE6UbzuKqyBE9/u/KzioAlnx2maXQHiDX9d4/zp8Ok3f+M7DPm+Ib6IU" crossorigin="anonymous"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.0-beta1/dist/js/bootstrap.min.js" integrity="sha384-pQQkAEnwaBkjpqZ8RU1fF1AKtTcHJwFl3pblpTlHXybJjHpMYo79HY3hIi4NKxyj" crossorigin="anonymous"></script>
+    -->
+
+</body>
+
 </html>
